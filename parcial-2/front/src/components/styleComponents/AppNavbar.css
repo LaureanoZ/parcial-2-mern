@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #ffc107;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.logo:hover {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.profile-icon {
+  font-size: 32px;
+  color: #333;
+  margin-left: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #ffc107;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.profile-icon:hover {
+  background-color: #ff9800;
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+
+.app-profile-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  animation: slide-in 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.app-profile-content {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

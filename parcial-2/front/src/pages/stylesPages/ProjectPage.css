@@ -1,0 +1,17 @@
+.project-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.project-page-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.project-page-description {
+  font-size: 18px;
+  color: #666;
+}
