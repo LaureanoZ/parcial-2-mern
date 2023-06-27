@@ -7,10 +7,10 @@ import profileService from '../services/profile.service'
 function LoginPage(){
     const navigate = useNavigate()
     let userData = {
-      name: "aasdadssd",
-      avatar: "https://fastly.picsum.photos/id/237/200/300.jpg",
+      name: "Tu nombre",
+      avatar: "https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U",
       email: "example@example.com",
-      company: "aadsadsadssd",
+      company: "Empresa",
       userId: ""
     };
     const [userName, setUserName] = useState('')
