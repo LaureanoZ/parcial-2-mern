@@ -4,6 +4,7 @@ import './styleComponents/AppProfile.css';
 import { useSession } from "../contexts/session.context"
 import profileService from "../services/profile.service"
 import projectService from "../services/project.service";
+import AppUpload from './AppUpload';
 
 
 function AppProfile({ onClose }) {
@@ -74,7 +75,8 @@ function AppProfile({ onClose }) {
           X
         </button>
         <h1 className="profile-name">{profile.name}</h1>
-        <img className="img-avatar" src={profile.avatar} alt="" />
+        <AppUpload></AppUpload>
+        {/* <img className="img-avatar" src={profile.avatar} alt="" /> */}
         <p className="profile-info">Email: {profile.email}</p>
         <p className="profile-info">Empresa: {profile.company}</p>
         <p className="profile-info">Proyectos: {filterProjectsByUser().length}</p>
@@ -92,7 +94,7 @@ function AppProfile({ onClose }) {
               placeholder="Nombre"
               required
             />
-            <input
+            {/* <input
               className="input-field"
               type="text"
               name="avatar"
@@ -100,7 +102,7 @@ function AppProfile({ onClose }) {
               onChange={handleChange}
               placeholder="Foto URL"
               required
-            />
+            /> */}
             <input
               className="input-field"
               type="text"
